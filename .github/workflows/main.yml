@@ -13,3 +13,11 @@ jobs:
       - name: "Segunda Ação"
         run: |
           echo "Segunda ação"
+          
+  segundo-job:
+    name: "Instalação do ambiente NodeJS"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verificação da versão do NOdeJS atual"
+        run: node --version
+        
